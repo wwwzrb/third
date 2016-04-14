@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    <servlet>
+        <servlet-name>signinServlet</servlet-name>
+        <servlet-class>org.servlet.signinServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>signinServlet</servlet-name>
+        <url-pattern>/signinServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>adminServlet</servlet-name>
+        <servlet-class>org.servlet.adminServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>adminServlet</servlet-name>
+        <url-pattern>/adminServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>buyServlet</servlet-name>
+        <servlet-class>org.servlet.buyServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>buyServlet</servlet-name>
+        <url-pattern>/buyServlet</url-pattern>
+    </servlet-mapping>
+</web-app>
